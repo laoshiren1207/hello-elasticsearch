@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.laoshiren.hello.elasticsearch.provider.mapper.OrganizationMapper">
+  <resultMap id="BaseResultMap" type="com.laoshiren.hello.elasticsearch.provider.domain.Organization">
+    <!--@mbg.generated-->
+    <!--@Table organization-->
+    <id column="org_id" jdbcType="BIGINT" property="orgId" />
+    <result column="org_code" jdbcType="VARCHAR" property="orgCode" />
+    <result column="org_name" jdbcType="VARCHAR" property="orgName" />
+    <result column="org_type" jdbcType="INTEGER" property="orgType" />
+    <result column="org_tel" jdbcType="VARCHAR" property="orgTel" />
+    <result column="org_address" jdbcType="VARCHAR" property="orgAddress" />
+    <result column="org_id_province" jdbcType="INTEGER" property="orgIdProvince" />
+    <result column="org_id_city" jdbcType="INTEGER" property="orgIdCity" />
+    <result column="org_id_area" jdbcType="INTEGER" property="orgIdArea" />
+    <result column="org_id_street" jdbcType="VARCHAR" property="orgIdStreet" />
+    <result column="org_link_man" jdbcType="VARCHAR" property="orgLinkMan" />
+    <result column="org_fax" jdbcType="VARCHAR" property="orgFax" />
+    <result column="org_lng" jdbcType="VARCHAR" property="orgLng" />
+    <result column="org_lat" jdbcType="VARCHAR" property="orgLat" />
+    <result column="org_id_father" jdbcType="INTEGER" property="orgIdFather" />
+    <result column="org_code_yibao" jdbcType="VARCHAR" property="orgCodeYibao" />
+    <result column="org_yibao" jdbcType="VARCHAR" property="orgYibao" />
+    <result column="org_enable" jdbcType="INTEGER" property="orgEnable" />
+    <result column="org_opening_hours" jdbcType="VARCHAR" property="orgOpeningHours" />
+    <result column="org_licence" jdbcType="VARCHAR" property="orgLicence" />
+    <result column="org_sale_range" jdbcType="VARCHAR" property="orgSaleRange" />
+    <result column="org_corporate" jdbcType="VARCHAR" property="orgCorporate" />
+    <result column="org_web_site" jdbcType="VARCHAR" property="orgWebSite" />
+    <result column="org_reg_capital" jdbcType="VARCHAR" property="orgRegCapital" />
+    <result column="org_introduce" jdbcType="LONGVARCHAR" property="orgIntroduce" />
+    <result column="is_deleted" jdbcType="INTEGER" property="isDeleted" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    org_id, org_code, org_name, org_type, org_tel, org_address, org_id_province, org_id_city, 
+    org_id_area, org_id_street, org_link_man, org_fax, org_lng, org_lat, org_id_father, 
+    org_code_yibao, org_yibao, org_enable, org_opening_hours, org_licence, org_sale_range, 
+    org_corporate, org_web_site, org_reg_capital, org_introduce, is_deleted
+  </sql>
+</mapper>

@@ -1,0 +1,34 @@
+server:
+  port: 29171
+
+spring:
+  #数据库
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.8.50:3306/shiro?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+    username: root
+    password: root
+    hikari:
+      minimum-idle: 5
+      idle-timeout: 600000
+      maximum-pool-size: 10
+      auto-commit: true
+      pool-name: MyHikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+
+mybatis:
+  configuration:
+    cache-enabled: false #禁用二级缓存
+    local-cache-scope: statement #一级缓存指定为statement级别
+  type-aliases-package: com.laoshiren.hello.elasticsearch.provider.domain
+  mapper-locations: classpath:mapper/*.xml
+
+
+laoshiren:
+  elastic:
+    hostname: 120.26.114.23
+    port: 9200
+    scheme: http

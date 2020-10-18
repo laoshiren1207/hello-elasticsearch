@@ -1,0 +1,9 @@
+server:
+  port: 29270
+
+
+laoshiren:
+  elastic:
+    hostname: 120.26.114.23
+    port: 9200
+    scheme: http
